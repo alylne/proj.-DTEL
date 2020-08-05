@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- estilo CSS -->
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+    <!--JavaScript-->
+    <script src="js/javascript.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <!--Link do google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+
+    <!--Tags novas do html5-->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <title>Dtel - Sistema</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- inicio Cabecalho -->
+        <nav id="Topo" class="navbar navbar-expand-sm navbar-light fundo_nav">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <img id="ImgLogo" src="img/logo3.png" width="400px" height="50px">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-header-topo">
+              <span><i class="fas fa-door-open"></i></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="nav-header-topo">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <form id="Login" class="form-inline my-2 my-lg-0">
+
+                                <label for="" class="texto_da_caixa_de_entrada" style="margin-right: 10px;">Login:</label>
+                                <input class="form-control caixa_de_entrada1 " type="text" placeholder="Digite seu nome">
+                                <label for="" class="texto_da_caixa_de_entrada" style="margin-right: 10px;">Senha:</label>
+                                <input class="form-control caixa_de_entrada2" type="password" placeholder="Digite sua senha">
+
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="btn btn-outline-light botao1">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <img src="img/principal.jpg" width="100%" height="100%">
+
+        <!-- Nav para menu da parte de baixo -->
+        <nav class="navbar navbar-expand-lg navbar-light fundo_nav">
+            <div class="container">
+
+                <div></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link opcoes_menu" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link opcoes_menu" href="tela_bolsista.html">Tela de bolsistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link opcoes_menu" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle opcoes_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Laboratórios
+                        </a>
+                            <div id="DropDownEscolherPesquisaLab" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-white" href="todos_os_labs.html">Todos os horários</a>
+                                <a class="dropdown-item text-white" href="buscar_lab.html">Buscar por um laboratório</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar um coodernador" aria-label="Search">
+                        <button id="BtnPesquisar" class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/fim Cabecalho -->
+
+    <!--Conteudo de cursos-->
+    <section id="Cursos" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <!--Botões de cada cursos-->
+                    <nav id="BtnCursos" class="btn-group-vertical">
+                        <button id="EngComput" class="btn btn-lg border border-secondary text-white" type="button">Engenharia de Computação</button>
+                        <button id="EngTele" class="btn btn-lg border border-secondary text-white" type="button">Engenharia de Telecomunicações</button>
+                        <button id="Telematica" class="btn btn-lg border border-secondary text-white" type="button">Tecnólogo em Telematica</button>
+                        <button id="TecInfo" class="btn btn-lg border border-secondary text-white" type="button">Técnico em Informatica</button>
+                        <button id="TecTele" class="btn btn-lg border border-secondary text-white" type="button">Técnico em Telecomunicações</button>
+                    </nav>
+                </div>
+                <div class="">
+                    <!--Informações sobre cada cursos-->
+                    <div id="informacoes" class="">
+                        <!--Dados da Engenharia de computação-->
+                        <div class="CampoInfo" id="EngComput">
+                            <!--Coordenador do curso-->
+                            <div class="espacamento_titulos_cursos">
+                                <strong class="titulos_cursos">Coodernador do curso:</strong>&nbsp;<span class="dados_cursos">Fernando Parente Garcia</span><br>
+                                <strong class="titulos_cursos">Email:</strong>&nbsp;<span class="dados_cursos">fernandoparente@ifce.edu.br</span><br>
+                                <strong class="titulos_cursos">Número:</strong>&nbsp;<span class="dados_cursos">(85) 3307.3607</span>
+                            </div>
+                            <!--Resumo sobre o curso-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Resumo sobre o curso:</strong>&nbsp;
+                                <span class="dados_cursos">Engenharia de Computação visa à aplicação da ciência da computação e ao uso da tecnologia da computação na solução de problemas da área. Esse curso se destina à formação de profissionais para atuar principalmente em áreas que pressuponham forte integração entre software e hardware, como automação industrial, sistemas paralelos e distribuídos, arquitetura de computadores e processamento digital de sinais.</span>
+                            </div>
+                            <!--Grade Curricular-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Matriz Curricular do curso:</strong>
+                                <a href=""><span class="dados_cursos">Baixar</span></a>
+                            </div>
+                        </div>
+                        <!--Dados da Engenharia de telecomunicações-->
+                        <div class="CampoInfo" id="EngTele">
+                            <!--Coordenador do curso-->
+                            <div class="espacamento_titulos_cursos">
+                                <strong class="titulos_cursos">Coodernador do curso:</strong>&nbsp;<span class="dados_cursos">Regis Cristiano Pinheiro Marques</span><br>
+                                <strong class="titulos_cursos">Email:</strong>&nbsp;<span class="dados_cursos">regismarques@ifce.edu.br</span><br>
+                                <strong class="titulos_cursos">Número:</strong>&nbsp;<span class="dados_cursos">(85) 3307.3607</span>
+                            </div>
+                            <!--Resumo sobre o curso-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Resumo sobre o curso:</strong>&nbsp;
+                                <span class="dados_cursos">A Engenharia de Telecomunicações forma profissional generalista para, em sintonia com a ética, a segurança, a legislação e a preservação do meio ambiente, lidar com materiais elétricos e eletrônicos, com medição e controle elétrico e eletrônico, com sistemas de comunicação e telecomunicação com ou sem fio e com redes de comunicação e satélite. Trata-se, pois, de um profissional com capacidade para projetar, instalar, operacionalizar, manter e especificar materiais, componentes, dispositivos e equipamentos elétricos, eletromecânicos, eletrônicos, magnéticos, ópticos, de instrumentação, de áudio/vídeo e de telecomunicações, equipamentos de comunicação interna e externa, redes de comunicação, cabeamento interno e externo, sistemas irradiantes e de radiodifusão, sistemas de radar, de navegação e de posicionamento; coordenar e supervisionar equipes de trabalho; realizar estudos de viabilidade técnico-econômica; executar e fiscalizar obras e serviços técnicos; efetuar vistorias, perícias e avaliações; e emitir laudos e pareceres.</span>
+                            </div>
+                            <!--Grade Curricular-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Matriz Curricular do curso:</strong>
+                                <a href=""><span class="dados_cursos">Baixar</span></a>
+                            </div>
+                        </div>
+                        <div class="CampoInfo" id="Telematica">
+                            <!--Coordenador do curso-->
+                            <div class="espacamento_titulos_cursos">
+                                <strong class="titulos_cursos">Coodernador do curso:</strong>&nbsp; <span class="dados_cursos">Ricardo Rodrigues de Araújo</span><br>
+                                <strong class="titulos_cursos">Email:</strong>&nbsp; <span class="dados_cursos">E-mail: rra@ifce.edu.br</span><br>
+                                <strong class="titulos_cursos">Número:</strong>&nbsp; <span class="dados_cursos">(85) 3307.3607</span>
+                            </div>
+                            <!--Resumo sobre o curso-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Resumo sobre o curso:</strong>&nbsp;
+                                <span class="dados_cursos">O curso de tecnologia em Telemática forma profissionais comprometidos com a ética, a cidadania e a integração da sociedade para atuar na área de telecomunicações e informática, mais precisamente em sistemas integrados de processamento e comunicação de dados, voz e imagem, com condições de desenvolver seu próprio negócio.</span>
+                            </div>
+                            <!--Grade Curricular-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Matriz Curricular do curso:</strong>
+                                <a href=""> <span class="dados_cursos">Baixar</span></a>
+                            </div>
+                        </div>
+                        <div class="CampoInfo" id="TecInfo">
+                            <!--Coordenador do curso-->
+                            <div class="espacamento_titulos_cursos">
+                                <strong class="titulos_cursos">Coodernador do curso:</strong>&nbsp;<span class="dados_cursos">José Roberto Bezerra</span><br>
+                                <strong class="titulos_cursos">Email:</strong>&nbsp;<span class="dados_cursos">jbroberto@ifce.edu.br</span><br>
+                                <strong class="titulos_cursos">Número:</strong>&nbsp;<span class="dados_cursos">(85) 3307.3607</span>
+                            </div>
+                            <!--Resumo sobre o curso-->
+                            <div>
+                                <strong class="titulos_cursos">Resumo sobre o curso:</strong>&nbsp;
+                                <span class="dados_cursos">O curso técnico integrado ao ensino médio na área de Informática forma profissionais para atuar diretamente com sistemas de informática, abrangendo a utilização eficiente, a programação e o suporte ao uso de equipamentos.</span>
+                            </div>
+                            <!--Grade Curricular-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Matriz Curricular do curso:</strong>
+                                <a href=""><span class="dados_cursos">Baixar</span></a>
+                            </div>
+                        </div>
+                        <div class="CampoInfo" id="TecTele">
+                            <!--Coordenador do curso-->
+                            <div class="espacamento_titulos_cursos">
+                                <strong class="titulos_cursos">Coodernador do curso:</strong>&nbsp;<span class="dados_cursos">Elvis Gomes</span><br>
+                                <strong class="titulos_cursos">Email:</strong>&nbsp;<span class="dados_cursos">elvis@ifce.edu.br</span><br>
+                                <strong class="titulos_cursos">Número:</strong>&nbsp;<span class="dados_cursos">(85) 3307.3607</span>
+                            </div>
+                            <!--Resumo sobre o curso-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Resumo sobre o curso:</strong>&nbsp;
+                                <span class="dados_cursos">Forma profissionais técnicos de nível médio para o exercício de uma profissão técnica na área de Telecomunicações, bem como os capacita para atuar com responsabilidade social, em consonância com a ética e a humanística.</span>
+                            </div>
+                            <!--Grade Curricular-->
+                            <div class="margin_20px">
+                                <strong class="titulos_cursos">Matriz Curricular do curso:</strong>
+                                <a href=""><span class="dados_cursos">Baixar</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Inicio do footer-->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue" style="background: #3cab87;  margin-top: 20px; color: white;">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="width: 90%; margin-left: 19px;">© 2020 Developed by: Alyne Alves, Drakson Bezerra and Moisés Duarte
+            <a href="https://mdbootstrap.com/"> </a>
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Codigo para a transição do conteúdos de curos-->
+    <script>
+        function tableshowhide(a, b, c) {
+            len = BtnCursos.childElementCount;
+            closeinformacoes();
+            for (i = 0; i < len; i++) {
+                BtnCursos.children[i].onclick = function() {
+                    closeinformacoes();
+                    informacoes.children[this.id].style.display = "block";
+                }
+            }
+
+            function closeinformacoes() {
+                for (i = 0; i < informacoes.childElementCount; i++) {
+                    informacoes.children[i].style.display = "none";
+                }
+            }
+
+            BtnCursos.children[c].click();
+        }
+
+        tableshowhide("BtnCursos", "informacoes", "EngComput");
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
